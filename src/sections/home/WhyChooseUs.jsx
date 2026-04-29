@@ -33,7 +33,16 @@ export default function WhyChooseUs() {
   return (
     <Box sx={{ bgcolor: "#EFF2F1", py: { xs: 8, md: 15 }, overflow: "hidden" }}>
       <Container maxWidth="lg">
-        <Grid container alignItems="center" wrap="nowrap">
+        <Grid
+          container
+          spacing={6}
+          alignItems="center"
+          sx={{
+            flexWrap: { xs: "wrap", md: "nowrap" },
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
           {/* Left Side: Text & Features */}
           <Grid item xs={12} md={6}>
             <Typography
@@ -113,11 +122,11 @@ export default function WhyChooseUs() {
                 src={dots_yellow}
                 sx={{
                   position: "absolute",
-                  top: "-15%",
-                  left: "-15%",
+                  top: "-10%",
+                  left: "-10%",
                   zIndex: 0,
                   opacity: 0.8,
-                  maxWidth: '220px'
+                  width: 220,
                 }}
               />
 

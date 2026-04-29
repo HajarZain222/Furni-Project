@@ -6,6 +6,7 @@ import ModernInteriorDesign from "../sections/home/ModernInteriorDesign";
 import RecentBlog from "../sections/home/RecentBlog";
 import Testimonials from "../sections/home/Testimonials";
 import WhyChooseUs from "../sections/home/WhyChooseUs";
+import ProductSection from "../sections/home/ProductSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ModernInteriorDesign />
       <Testimonials />
       <RecentBlog />
+      <ProductSection />
     </>
   )
 }

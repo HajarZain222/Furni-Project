@@ -16,18 +16,25 @@ export default function WhyChooseUs() {
   return (
     <Box sx={{ bgcolor: "#EFF2F1", py: { xs: 8, md: 15 } }}>
       <Container maxWidth="lg">
-
-        {/* 🔥 7 / 5 SPLIT */}
-        <Grid container spacing={6} alignItems="center" wrap="nowrap">
-
+        {/* 7 / 5 SPLIT */}
+        <Grid
+          container
+          spacing={6}
+          alignItems="center"
+          sx={{
+            flexWrap: { xs: "wrap", md: "nowrap" },
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
           {/* LEFT - IMAGES (7) */}
           <Grid item xs={12} md={7}>
             <Box
               sx={{
                 display: { xs: "flex", md: "grid" },
                 flexDirection: { xs: "column" },
-                gridTemplateColumns: "1.2fr 1fr",
-                gridTemplateRows: "240px 240px",
+                gridTemplateColumns: "3fr 1fr",
+                gridTemplateRows: "260px 260px",
                 gap: 2,
                 position: "relative",
                 height: { md: "520px" },
@@ -41,7 +48,7 @@ export default function WhyChooseUs() {
                   position: "absolute",
                   top: -60,
                   left: -60,
-                  width: 260,
+                  width: 220,
                   opacity: 0.8,
                   zIndex: 0,
                 }}
@@ -109,13 +116,13 @@ export default function WhyChooseUs() {
                 color: "#6a6a6a",
                 mb: 4,
                 lineHeight: 1.8,
-                maxWidth: '450px'
+                maxWidth: "450px",
               }}
             >
-              Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl
-              dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet
-              dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus
-              et malesuada
+              Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
+              quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+              vulputate velit imperdiet dolor tempor tristique. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada
             </Typography>
 
             <Grid container spacing={2} sx={{ mb: 4 }}>
@@ -125,7 +132,10 @@ export default function WhyChooseUs() {
                     <PanoramaFishEyeIcon
                       sx={{ color: "#3B5D50", fontSize: "0.7rem", mt: 0.7 }}
                     />
-                    <Typography variant="body2" sx={{ color: "#6a6a6a" , maxWidth: '200px' }}>
+                    <Typography
+                      variant="body2"
+                      sx={{ color: "#6a6a6a", maxWidth: "200px" }}
+                    >
                       {desc}
                     </Typography>
                   </Box>
